@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Women Can Sell</title>
-    <meta name="description" content="Master sales. From foundation to $30M enterprise contracts.">
+    <meta name="description" content="Master sales. Foundation to $30M enterprise contracts.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -28,58 +28,40 @@
 
         /* HERO */
         .hero {
-            background: #0a1628;
+            background: #0080FF;
             color: white;
             padding: 100px 20px;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 900;
             margin-bottom: 24px;
-            letter-spacing: -1.5px;
+            letter-spacing: -2px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .hero .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 48px;
-            opacity: 0.9;
+            opacity: 0.95;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .cta-primary {
-            display: inline-block;
-            padding: 18px 48px;
-            background: white;
-            color: #0a1628;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 700;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .cta-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(255,255,255,0.15);
-        }
-
         /* PROOF BAR */
         .proof-bar {
             background: #f8f9fa;
-            padding: 48px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
         .proof-bar .stats {
             display: flex;
             justify-content: center;
-            gap: 60px;
+            gap: 80px;
             flex-wrap: wrap;
         }
 
@@ -88,302 +70,241 @@
         }
 
         .proof-bar .stat-number {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 900;
-            color: #0a1628;
+            color: #0080FF;
             margin-bottom: 8px;
         }
 
         .proof-bar .stat-label {
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        /* WHY SECTION */
-        .section-why {
-            padding: 80px 20px;
-            background: white;
-        }
-
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 60px;
-            letter-spacing: -0.5px;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .why-item {
-            text-align: center;
-        }
-
-        .why-item h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #0a1628;
-            margin-bottom: 16px;
-        }
-
-        .why-item p {
             font-size: 1rem;
-            color: #444;
-            line-height: 1.7;
+            color: #666;
         }
 
         /* INTENSIVES SECTION */
         .section-intensives {
             padding: 80px 20px;
-            background: #f8f9fa;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 60px;
+            letter-spacing: -1px;
         }
 
         .intensives-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 24px;
-            margin-bottom: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
         }
 
         .intensive-card {
             background: white;
-            border: 1px solid #e0e0e0;
-            padding: 32px 24px;
+            border: 2px solid #e0e0e0;
+            padding: 40px 30px;
             transition: all 0.2s ease;
+            text-align: center;
         }
 
         .intensive-card:hover {
-            border-color: #0a1628;
-            box-shadow: 0 4px 20px rgba(10,22,40,0.08);
+            border-color: #0080FF;
+            box-shadow: 0 8px 30px rgba(51,240,255,0.15);
+            transform: translateY(-4px);
         }
 
         .intensive-card .title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #0a1628;
-            margin-bottom: 12px;
-            min-height: 52px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #0080FF;
+            margin-bottom: 20px;
+            min-height: 60px;
             display: flex;
             align-items: center;
-        }
-
-        .intensive-card .date {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .intensive-card .description {
-            font-size: 0.85rem;
-            color: #444;
-            line-height: 1.7;
-            margin-bottom: 24px;
-            min-height: 140px;
-        }
-
-        .intensive-card .description-item {
-            margin-bottom: 8px;
+            justify-content: center;
         }
 
         .intensive-card .price {
-            font-size: 1.9rem;
+            font-size: 2.5rem;
             font-weight: 900;
             color: #1a1a1a;
-            margin-bottom: 8px;
+            margin-bottom: 30px;
         }
 
         .intensive-card .intro-note {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             color: #888;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font-style: italic;
         }
 
-        .intensive-card .apply-button {
+        .intensive-card .join-button {
             display: block;
             width: 100%;
-            padding: 14px;
-            background: #0a1628;
+            padding: 18px;
+            background: #0080FF;
             color: white;
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             font-weight: 700;
             text-align: center;
-            border-radius: 4px;
+            border-radius: 6px;
             transition: all 0.2s ease;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: none;
         }
 
-        .intensive-card .apply-button:hover {
-            background: #152841;
-        }
-
-        .intensive-card .spots {
-            font-size: 0.75rem;
-            color: #d9534f;
-            margin-top: 12px;
-            font-weight: 600;
-            text-align: center;
+        .intensive-card .join-button:hover {
+            background: #006BDB;
+            transform: translateY(-2px);
         }
 
         /* ANNUAL INTENSIVE */
         .annual-intensive {
-            background: #0a1628;
+            background: #0080FF;
             color: white;
-            padding: 60px 40px;
+            padding: 80px 40px;
             text-align: center;
-            margin-bottom: 60px;
         }
 
         .annual-intensive .label {
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 16px;
-            opacity: 0.8;
-        }
-
-        .annual-intensive .title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-            line-height: 1.3;
-        }
-
-        .annual-intensive .frequency {
-            font-size: 0.95rem;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
             opacity: 0.9;
         }
 
-        .annual-intensive .price {
+        .annual-intensive .title {
             font-size: 2.5rem;
             font-weight: 900;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .annual-intensive .price {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
         }
 
         .annual-intensive .status {
-            font-size: 1rem;
-            margin-bottom: 30px;
-            opacity: 0.85;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
         }
 
-        .annual-intensive .waitlist-button {
+        .annual-intensive .join-button {
             display: inline-block;
-            padding: 16px 40px;
+            padding: 20px 50px;
             background: white;
-            color: #0a1628;
+            color: #0080FF;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 700;
-            border-radius: 4px;
+            border-radius: 6px;
             transition: all 0.2s ease;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: none;
         }
 
-        .annual-intensive .waitlist-button:hover {
-            transform: translateY(-2px);
+        .annual-intensive .join-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,255,255,0.3);
         }
 
-        /* APPLICATION FORM */
-        .section-apply {
-            padding: 80px 20px;
-            background: white;
-        }
-
-        .application-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .application-form h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-            text-align: center;
-        }
-
-        .application-form .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 1rem;
-        }
-
-        .form-group {
-            margin-bottom: 24px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #1a1a1a;
-            font-size: 0.95rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
+        /* POPUP MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding: 14px 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        .modal-content select {
+            width: 100%;
+            padding: 16px;
+            font-size: 1.1rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 30px;
             font-family: inherit;
-            transition: border-color 0.2s ease;
         }
 
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #0a1628;
-        }
-
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        .submit-button {
+        .modal-content button {
             width: 100%;
             padding: 18px;
-            background: #0a1628;
+            background: #0080FF;
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
-            transition: all 0.2s ease;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
-        .submit-button:hover {
-            background: #152841;
+        .modal-content button:hover {
+            background: #006BDB;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
         }
 
         /* FOOTER */
         .footer {
             background: #1a1a1a;
             color: white;
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
         .footer .contact {
-            font-size: 1rem;
-            margin-bottom: 12px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
         }
 
         .footer a {
@@ -397,12 +318,12 @@
         }
 
         .footer .social {
-            font-size: 0.95rem;
-            margin-bottom: 20px;
+            font-size: 1rem;
+            margin-bottom: 25px;
         }
 
         .footer .copyright {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             opacity: 0.6;
         }
 
@@ -412,20 +333,16 @@
                 font-size: 2.5rem;
             }
 
-            .hero .subtitle {
-                font-size: 1.1rem;
-            }
-
             .intensives-grid {
                 grid-template-columns: 1fr;
             }
 
             .annual-intensive .title {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
             }
 
             .proof-bar .stats {
-                gap: 40px;
+                gap: 50px;
             }
         }
 
@@ -440,8 +357,7 @@
     <section class="hero">
         <div class="container">
             <h1>ALL WOMEN CAN SELL</h1>
-            <p class="subtitle">From cold calling to enterprise contracts. Master sales at every level.</p>
-            <a href="#apply" class="cta-primary">Apply Now</a>
+            <p class="subtitle">From cold calling to enterprise contracts.<br>Master sales at every level.</p>
         </div>
     </section>
 
@@ -465,113 +381,47 @@
         </div>
     </section>
 
-    <!-- WHY SECTION -->
-    <section class="section-why">
-        <div class="container">
-            <h2 class="section-title">Not Another Sales Course</h2>
-            <div class="why-grid">
-                <div class="why-item">
-                    <h3>Real Experience</h3>
-                    <p>Navy veteran. Doctor. Built a compliance company that closed $30M+ contracts. This is how it's actually done.</p>
-                </div>
-                <div class="why-item">
-                    <h3>Full Stack Training</h3>
-                    <p>Sales frameworks, cold outreach, objection handling, negotiation, ads, systems. Everything you need to sell anything.</p>
-                </div>
-                <div class="why-item">
-                    <h3>Small Groups</h3>
-                    <p>Maximum 15 people per intensive. You're not sitting in a webinar with 500 people. You get actual attention.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- INTENSIVES -->
     <section class="section-intensives">
         <div class="container">
-            <h2 class="section-title" id="intensives">Live Intensives</h2>
+            <h2 class="section-title">Live Intensives</h2>
 
             <div class="intensives-grid">
                 
                 <!-- Foundation -->
                 <div class="intensive-card">
                     <div class="title">FOUNDATION</div>
-                    <div class="date">March 6, 2026 • 10:00 AM EST</div>
-                    <div class="description">
-                        <div class="description-item">• Universal sales framework</div>
-                        <div class="description-item">• Objection handling scripts</div>
-                        <div class="description-item">• Cold outreach that works</div>
-                        <div class="description-item">• Closing without being pushy</div>
-                        <div class="description-item">• How to scale with ads</div>
-                    </div>
                     <div class="price">$5,000</div>
                     <div class="intro-note">(Introductory Price)</div>
-                    <a href="#apply" class="apply-button">Apply Now</a>
-                    <div class="spots">12 spots left</div>
+                    <button class="join-button" onclick="openModal('foundation-intro')">Secure Your Spot</button>
                 </div>
 
                 <!-- Ecom -->
                 <div class="intensive-card">
                     <div class="title">ECOM</div>
-                    <div class="date">April 3, 2026 • 10:00 AM EST</div>
-                    <div class="description">
-                        <div class="description-item">• Product selection framework</div>
-                        <div class="description-item">• Store setup in 48 hours</div>
-                        <div class="description-item">• Ad strategy that converts</div>
-                        <div class="description-item">• Scaling $5K to $50K/month</div>
-                        <div class="description-item">• Systems & automation</div>
-                    </div>
                     <div class="price">$10,000</div>
-                    <a href="#apply" class="apply-button">Apply Now</a>
-                    <div class="spots">15 spots left</div>
+                    <button class="join-button" onclick="openModal('ecom')">Secure Your Spot</button>
                 </div>
 
                 <!-- Cold Calling -->
                 <div class="intensive-card">
                     <div class="title">COLD CALLING INTENSIVE</div>
-                    <div class="date">May 1, 2026 • 10:00 AM EST</div>
-                    <div class="description">
-                        <div class="description-item">• Book 20 meetings per week</div>
-                        <div class="description-item">• Scripts & objection handling</div>
-                        <div class="description-item">• Voicemail tactics (20% callback)</div>
-                        <div class="description-item">• Handle gatekeepers</div>
-                        <div class="description-item">• Enterprise outreach strategy</div>
-                    </div>
                     <div class="price">$20,000</div>
-                    <a href="#apply" class="apply-button">Apply Now</a>
-                    <div class="spots">10 spots left</div>
+                    <button class="join-button" onclick="openModal('cold-calling')">Secure Your Spot</button>
                 </div>
 
                 <!-- Foundation Repeat -->
                 <div class="intensive-card">
                     <div class="title">FOUNDATION</div>
-                    <div class="date">June 5, 2026 • 10:00 AM EST</div>
-                    <div class="description">
-                        <div class="description-item">• Universal sales framework</div>
-                        <div class="description-item">• Objection handling scripts</div>
-                        <div class="description-item">• Cold outreach that works</div>
-                        <div class="description-item">• Closing without being pushy</div>
-                        <div class="description-item">• How to scale with ads</div>
-                    </div>
                     <div class="price">$10,000</div>
-                    <a href="#apply" class="apply-button">Apply Now</a>
-                    <div class="spots">15 spots left</div>
+                    <button class="join-button" onclick="openModal('foundation')">Secure Your Spot</button>
                 </div>
 
                 <!-- Mid-Ticket Sales -->
                 <div class="intensive-card">
                     <div class="title">MID-TICKET SALES</div>
-                    <div class="date">July 3, 2026 • 10:00 AM EST</div>
-                    <div class="description">
-                        <div class="description-item">• Close $50K-$500K deals</div>
-                        <div class="description-item">• Enterprise sales frameworks</div>
-                        <div class="description-item">• Proposal structure for 6-figure deals</div>
-                        <div class="description-item">• Director/VP-level negotiation</div>
-                        <div class="description-item">• Pipeline management systems</div>
-                    </div>
                     <div class="price">$100,000</div>
-                    <a href="#apply" class="apply-button">Apply Now</a>
-                    <div class="spots">8 spots left</div>
+                    <button class="join-button" onclick="openModal('mid-ticket')">Secure Your Spot</button>
                 </div>
 
             </div>
@@ -580,63 +430,31 @@
             <div class="annual-intensive">
                 <div class="label">ANNUAL INTENSIVE</div>
                 <div class="title">$1M-$30M ENTERPRISE CONTRACTS</div>
-                <div class="frequency">Once Per Year</div>
                 <div class="price">$300,000</div>
-                <div class="status">Next Date: TBA</div>
-                <a href="#apply" class="waitlist-button">Join Waitlist</a>
+                <div class="status">Once Per Year • Next Date: TBA</div>
+                <button class="join-button" onclick="openModal('annual')">Join Waitlist</button>
             </div>
 
         </div>
     </section>
 
-    <!-- APPLICATION FORM -->
-    <section class="section-apply" id="apply">
-        <div class="container">
-            <div class="application-form">
-                <h2>Apply for an Intensive</h2>
-                <p class="subtitle">We review all applications within 48 hours. If accepted, you'll receive payment instructions.</p>
-
-                <form id="contact-form" action="https://formspree.io/f/mojndlzg" method="POST">
-                    
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone <span style="color:#888; font-weight:400;">(optional)</span></label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="intensive">Which Intensive? *</label>
-                        <select id="intensive" name="intensive" required>
-                            <option value="">-- Select --</option>
-                            <option value="Foundation - March 6 ($5,000)">Foundation - March 6 ($5,000)</option>
-                            <option value="Ecom - April 3 ($10,000)">Ecom - April 3 ($10,000)</option>
-                            <option value="Cold Calling - May 1 ($20,000)">Cold Calling - May 1 ($20,000)</option>
-                            <option value="Foundation - June 5 ($10,000)">Foundation - June 5 ($10,000)</option>
-                            <option value="Mid-Ticket Sales - July 3 ($100,000)">Mid-Ticket Sales - July 3 ($100,000)</option>
-                            <option value="Annual - $300K (Waitlist)">Annual - $300K (Waitlist)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="why">Why do you want this intensive? (2-3 sentences) *</label>
-                        <textarea id="why" name="why" required placeholder="Tell us about your business, what you're selling, and what you hope to achieve..."></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-button">Submit Application</button>
-
-                </form>
-            </div>
+    <!-- POPUP MODAL -->
+    <div class="modal" id="modal">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <div class="modal-content">
+            <h2>Select Your Intensive</h2>
+            <select id="intensive-select">
+                <option value="">-- Choose One --</option>
+                <option value="foundation-march">Foundation - March 6 ($5,000 Intro)</option>
+                <option value="ecom-april">Ecom - April 3 ($10,000)</option>
+                <option value="cold-calling-may">Cold Calling - May 1 ($20,000)</option>
+                <option value="foundation-june">Foundation - June 5 ($10,000)</option>
+                <option value="mid-ticket-july">Mid-Ticket Sales - July 3 ($100,000)</option>
+                <option value="annual">Annual - $300K (Waitlist)</option>
+            </select>
+            <button onclick="goToDetailsPage()">Continue</button>
         </div>
-    </section>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -646,38 +464,33 @@
     </footer>
 
     <script>
-    // Form submission handling - stays on page like AVACompli
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
+    function openModal(intensive) {
+        document.getElementById('modal').classList.add('active');
+        document.body.style.overflow = 'hidden';
         
-        var form = this;
-        var formData = new FormData(form);
-        var submitButton = form.querySelector('button[type="submit"]');
-        var originalButtonText = submitButton.textContent;
-        
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-        
-        fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        .then(function(response) {
-            if (response.ok) {
-                form.innerHTML = '<div style="text-align: center; padding: 60px 20px; background: #f0f9f4; border-radius: 8px;"><h3 style="color: #059669; font-size: 2rem; margin-bottom: 16px; font-weight: 700;">✓ Application Received</h3><p style="font-size: 1.1rem; color: #1a1a1a; margin-bottom: 12px;">Thank you for applying.</p><p style="font-size: 1rem; color: #666;">We review all applications within 48 hours. If accepted, you'll receive payment instructions via email.</p></div>';
-            } else {
-                throw new Error('Form submission failed');
-            }
-        })
-        .catch(function(error) {
-            alert('There was a problem submitting your application. Please email us directly at teams@allwomencansell.com');
-            submitButton.textContent = originalButtonText;
-            submitButton.disabled = false;
-        });
-    });
+        // Pre-select if clicked from specific card
+        var select = document.getElementById('intensive-select');
+        if (intensive === 'foundation-intro') select.value = 'foundation-march';
+        else if (intensive === 'ecom') select.value = 'ecom-april';
+        else if (intensive === 'cold-calling') select.value = 'cold-calling-may';
+        else if (intensive === 'foundation') select.value = 'foundation-june';
+        else if (intensive === 'mid-ticket') select.value = 'mid-ticket-july';
+        else if (intensive === 'annual') select.value = 'annual';
+    }
+
+    function closeModal() {
+        document.getElementById('modal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function goToDetailsPage() {
+        var selected = document.getElementById('intensive-select').value;
+        if (selected) {
+            window.location.href = 'join.html?intensive=' + selected;
+        } else {
+            alert('Please select an intensive');
+        }
+    }
     </script>
 
 </body>
