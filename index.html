@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Women Can Sell</title>
-    <meta name="description" content="High-level sales intensives. Foundation to enterprise contracts.">
+    <meta name="description" content="Master sales. From foundation to $30M enterprise contracts.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -17,7 +17,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             color: #1a1a1a;
             background: white;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         .container {
@@ -26,19 +26,28 @@
             padding: 0 20px;
         }
 
-        /* HERO - Deep Navy */
+        /* HERO */
         .hero {
             background: #0a1628;
             color: white;
-            padding: 100px 20px 80px;
+            padding: 100px 20px;
             text-align: center;
         }
 
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 900;
-            margin-bottom: 50px;
+            margin-bottom: 24px;
             letter-spacing: -1.5px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 48px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .cta-primary {
@@ -60,24 +69,84 @@
             box-shadow: 0 8px 24px rgba(255,255,255,0.15);
         }
 
-        /* INTENSIVES SECTION */
-        .section-intensives {
+        /* PROOF BAR */
+        .proof-bar {
+            background: #f8f9fa;
+            padding: 48px 20px;
+            text-align: center;
+        }
+
+        .proof-bar .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .proof-bar .stat {
+            text-align: center;
+        }
+
+        .proof-bar .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #0a1628;
+            margin-bottom: 8px;
+        }
+
+        .proof-bar .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* WHY SECTION */
+        .section-why {
             padding: 80px 20px;
             background: white;
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 60px;
             letter-spacing: -0.5px;
         }
 
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .why-item {
+            text-align: center;
+        }
+
+        .why-item h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0a1628;
+            margin-bottom: 16px;
+        }
+
+        .why-item p {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        /* INTENSIVES SECTION */
+        .section-intensives {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
         .intensives-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
             margin-bottom: 60px;
         }
 
@@ -98,7 +167,7 @@
             font-weight: 700;
             color: #0a1628;
             margin-bottom: 12px;
-            min-height: 48px;
+            min-height: 52px;
             display: flex;
             align-items: center;
         }
@@ -112,20 +181,20 @@
         .intensive-card .description {
             font-size: 0.85rem;
             color: #444;
-            line-height: 1.6;
+            line-height: 1.7;
             margin-bottom: 24px;
-            min-height: 120px;
+            min-height: 140px;
         }
 
         .intensive-card .description-item {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .intensive-card .price {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             font-weight: 900;
             color: #1a1a1a;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .intensive-card .intro-note {
@@ -227,7 +296,7 @@
         /* APPLICATION FORM */
         .section-apply {
             padding: 80px 20px;
-            background: #f8f9fa;
+            background: white;
         }
 
         .application-form {
@@ -236,9 +305,9 @@
         }
 
         .application-form h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             text-align: center;
         }
 
@@ -246,11 +315,11 @@
             text-align: center;
             color: #666;
             margin-bottom: 40px;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
         .form-group label {
@@ -258,17 +327,17 @@
             margin-bottom: 8px;
             font-weight: 600;
             color: #1a1a1a;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         .form-group input,
         .form-group select,
         .form-group textarea {
             width: 100%;
-            padding: 12px 14px;
+            padding: 14px 16px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-family: inherit;
             transition: border-color 0.2s ease;
         }
@@ -281,18 +350,18 @@
         }
 
         .form-group textarea {
-            min-height: 100px;
+            min-height: 120px;
             resize: vertical;
         }
 
         .submit-button {
             width: 100%;
-            padding: 16px;
+            padding: 18px;
             background: #0a1628;
             color: white;
             border: none;
             border-radius: 4px;
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -308,7 +377,7 @@
         .footer {
             background: #1a1a1a;
             color: white;
-            padding: 40px 20px 30px;
+            padding: 40px 20px;
             text-align: center;
         }
 
@@ -343,6 +412,10 @@
                 font-size: 2.5rem;
             }
 
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
             .intensives-grid {
                 grid-template-columns: 1fr;
             }
@@ -351,8 +424,8 @@
                 font-size: 1.6rem;
             }
 
-            .annual-intensive .price {
-                font-size: 2rem;
+            .proof-bar .stats {
+                gap: 40px;
             }
         }
 
@@ -367,7 +440,49 @@
     <section class="hero">
         <div class="container">
             <h1>ALL WOMEN CAN SELL</h1>
+            <p class="subtitle">From cold calling to enterprise contracts. Master sales at every level.</p>
             <a href="#apply" class="cta-primary">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- PROOF BAR -->
+    <section class="proof-bar">
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">$30M</div>
+                    <div class="stat-label">Contracts Closed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">90 Min</div>
+                    <div class="stat-label">Live Intensives</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5-15</div>
+                    <div class="stat-label">Spots Per Session</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY SECTION -->
+    <section class="section-why">
+        <div class="container">
+            <h2 class="section-title">Not Another Sales Course</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <h3>Real Experience</h3>
+                    <p>Navy veteran. Doctor. Built a compliance company that closed $30M+ contracts. This is how it's actually done.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Full Stack Training</h3>
+                    <p>Sales frameworks, cold outreach, objection handling, negotiation, ads, systems. Everything you need to sell anything.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Small Groups</h3>
+                    <p>Maximum 15 people per intensive. You're not sitting in a webinar with 500 people. You get actual attention.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -478,10 +593,10 @@
     <section class="section-apply" id="apply">
         <div class="container">
             <div class="application-form">
-                <h2>Apply</h2>
+                <h2>Apply for an Intensive</h2>
                 <p class="subtitle">We review all applications within 48 hours. If accepted, you'll receive payment instructions.</p>
 
-                <form action="https://formspree.io/f/mojndlzg" method="POST">
+                <form id="contact-form" action="https://formspree.io/f/mojndlzg" method="POST">
                     
                     <div class="form-group">
                         <label for="name">Name *</label>
@@ -529,6 +644,41 @@
         <p class="social">YouTube: <a href="https://youtube.com/@allwomencansell" target="_blank">@allwomencansell</a></p>
         <p class="copyright">© 2026 All Women Can Sell</p>
     </footer>
+
+    <script>
+    // Form submission handling - stays on page like AVACompli
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        var form = this;
+        var formData = new FormData(form);
+        var submitButton = form.querySelector('button[type="submit"]');
+        var originalButtonText = submitButton.textContent;
+        
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(function(response) {
+            if (response.ok) {
+                form.innerHTML = '<div style="text-align: center; padding: 60px 20px; background: #f0f9f4; border-radius: 8px;"><h3 style="color: #059669; font-size: 2rem; margin-bottom: 16px; font-weight: 700;">✓ Application Received</h3><p style="font-size: 1.1rem; color: #1a1a1a; margin-bottom: 12px;">Thank you for applying.</p><p style="font-size: 1rem; color: #666;">We review all applications within 48 hours. If accepted, you'll receive payment instructions via email.</p></div>';
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(function(error) {
+            alert('There was a problem submitting your application. Please email us directly at teams@allwomencansell.com');
+            submitButton.textContent = originalButtonText;
+            submitButton.disabled = false;
+        });
+    });
+    </script>
 
 </body>
 </html>
