@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Intensive | All Women Can Sell</title>
-    <meta name="description" content="Secure your spot in the next live intensive.">
+    <title>Join | All Women Can Sell</title>
+    <meta name="description" content="Secure your spot.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -28,98 +28,88 @@
 
         /* HEADER */
         .header {
-            background: #0080FF;
+            background: #0033A0;
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
         .header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 900;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             letter-spacing: -1px;
         }
 
-        .header .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-
-        /* INTENSIVE DETAILS */
-        .section-details {
-            padding: 60px 20px;
-            background: white;
-        }
-
-        .intensive-info {
-            background: #f8f9fa;
-            padding: 40px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-        }
-
-        .intensive-info h2 {
-            font-size: 2rem;
-            font-weight: 900;
-            color: #0080FF;
-            margin-bottom: 20px;
-        }
-
-        .intensive-info .date {
-            font-size: 1.2rem;
+        .header .dates {
+            font-size: 1.5rem;
             font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 20px;
-        }
-
-        .intensive-info .price {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #1a1a1a;
             margin-bottom: 30px;
         }
 
-        .intensive-info .details {
-            font-size: 1rem;
-            color: #444;
-            line-height: 1.8;
+        .header .price {
+            font-size: 4rem;
+            font-weight: 900;
         }
 
-        .intensive-info .details-item {
-            margin-bottom: 12px;
-            padding-left: 24px;
+        /* DETAILS */
+        .section-details {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .details-list {
+            background: #f8f9fa;
+            padding: 50px;
+            border-radius: 8px;
+            margin-bottom: 60px;
+        }
+
+        .details-list h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #0033A0;
+            margin-bottom: 30px;
+        }
+
+        .details-item {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            padding-left: 30px;
             position: relative;
+            line-height: 1.7;
         }
 
-        .intensive-info .details-item:before {
+        .details-item:before {
             content: "•";
             position: absolute;
             left: 0;
-            color: #0080FF;
-            font-size: 1.5rem;
+            color: #0033A0;
+            font-size: 1.8rem;
             line-height: 1;
         }
 
-        .intensive-info .spots {
-            margin-top: 30px;
-            font-size: 1rem;
+        .spots-notice {
+            text-align: center;
+            font-size: 1.2rem;
             color: #d9534f;
             font-weight: 700;
+            margin-bottom: 60px;
         }
 
         /* FORM */
         .application-form {
             background: white;
-            padding: 50px 40px;
-            border: 2px solid #0080FF;
+            padding: 60px 50px;
+            border: 3px solid #0033A0;
             border-radius: 8px;
         }
 
         .application-form h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 900;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             text-align: center;
             color: #1a1a1a;
         }
@@ -127,54 +117,52 @@
         .application-form .subtitle {
             text-align: center;
             color: #666;
-            margin-bottom: 40px;
-            font-size: 1rem;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
         }
 
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-weight: 700;
             color: #1a1a1a;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .form-group input,
-        .form-group select,
         .form-group textarea {
             width: 100%;
-            padding: 14px 16px;
+            padding: 16px 18px;
             border: 2px solid #ddd;
             border-radius: 6px;
-            font-size: 1rem;
+            font-size: 1.05rem;
             font-family: inherit;
             transition: border-color 0.2s ease;
         }
 
         .form-group input:focus,
-        .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #0080FF;
+            border-color: #0033A0;
         }
 
         .form-group textarea {
-            min-height: 120px;
+            min-height: 140px;
             resize: vertical;
         }
 
         .submit-button {
             width: 100%;
-            padding: 20px;
-            background: #0080FF;
+            padding: 22px;
+            background: #0033A0;
             color: white;
             border: none;
             border-radius: 6px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -183,7 +171,7 @@
         }
 
         .submit-button:hover {
-            background: #006BDB;
+            background: #002B85;
             transform: translateY(-2px);
         }
 
@@ -200,10 +188,6 @@
             text-decoration: none;
         }
 
-        .footer a:hover {
-            opacity: 0.7;
-        }
-
         .footer .copyright {
             font-size: 0.9rem;
             opacity: 0.6;
@@ -212,11 +196,23 @@
 
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
+            }
+
+            .header .dates {
+                font-size: 1.2rem;
+            }
+
+            .header .price {
+                font-size: 3rem;
             }
 
             .application-form {
-                padding: 30px 20px;
+                padding: 40px 25px;
+            }
+
+            .details-list {
+                padding: 35px 25px;
             }
         }
     </style>
@@ -226,26 +222,31 @@
     <!-- HEADER -->
     <section class="header">
         <div class="container">
-            <h1>ALL WOMEN CAN SELL</h1>
-            <p class="subtitle">Secure Your Spot</p>
+            <h1 id="workshop-title"></h1>
+            <div class="dates" id="workshop-dates"></div>
+            <div class="price" id="workshop-price"></div>
         </div>
     </section>
 
-    <!-- INTENSIVE DETAILS -->
+    <!-- DETAILS -->
     <section class="section-details">
         <div class="container">
-            <div class="intensive-info" id="intensive-details">
-                <!-- Content loaded dynamically based on URL parameter -->
+            
+            <div class="details-list">
+                <h2>What's Covered</h2>
+                <div id="workshop-details"></div>
             </div>
 
-            <!-- APPLICATION FORM -->
+            <div class="spots-notice" id="spots-left"></div>
+
+            <!-- FORM -->
             <div class="application-form">
-                <h2>Complete Your Application</h2>
+                <h2>Secure Your Spot</h2>
                 <p class="subtitle">We review all applications within 48 hours. If accepted, you'll receive payment instructions.</p>
 
                 <form id="contact-form" action="https://formspree.io/f/mojndlzg" method="POST">
                     
-                    <input type="hidden" id="selected-intensive" name="intensive" value="">
+                    <input type="hidden" id="selected-workshop" name="workshop" value="">
 
                     <div class="form-group">
                         <label for="name">Name *</label>
@@ -263,7 +264,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="why">Why do you want this intensive? (2-3 sentences) *</label>
+                        <label for="why">Why do you want this? (2-3 sentences) *</label>
                         <textarea id="why" name="why" required placeholder="Tell us about your business, what you're selling, and what you hope to achieve..."></textarea>
                     </div>
 
@@ -281,14 +282,13 @@
     </footer>
 
     <script>
-    // Intensive details database
-    const intensives = {
-        'foundation-march': {
+    // Workshop data
+    const workshops = {
+        'foundation': {
             title: 'FOUNDATION',
-            date: 'March 6, 2026 • 10:00 AM EST',
-            price: '$5,000',
-            priceNote: '(Introductory Price)',
-            spots: '12 spots left',
+            dates: ['March 6, 2026 • 10:00 AM EST', 'June 5, 2026 • 10:00 AM EST'],
+            price: ['$5,000 (Intro Price)', '$10,000'],
+            spots: ['12 spots left', '15 spots left'],
             details: [
                 'Universal sales framework that works for products, services, anything',
                 'Objection handling scripts for the 5 most common objections',
@@ -298,12 +298,11 @@
                 'Q&A session included'
             ]
         },
-        'ecom-april': {
+        'ecom': {
             title: 'ECOM',
-            date: 'April 3, 2026 • 10:00 AM EST',
-            price: '$10,000',
-            priceNote: '',
-            spots: '15 spots left',
+            dates: ['April 3, 2026 • 10:00 AM EST'],
+            price: ['$10,000'],
+            spots: ['15 spots left'],
             details: [
                 'Product selection framework (what sells, what doesn\'t)',
                 'Store setup in 48 hours (Shopify walkthrough)',
@@ -313,12 +312,11 @@
                 'Q&A session included'
             ]
         },
-        'cold-calling-may': {
-            title: 'COLD CALLING INTENSIVE',
-            date: 'May 1, 2026 • 10:00 AM EST',
-            price: '$20,000',
-            priceNote: '',
-            spots: '10 spots left',
+        'cold-calling': {
+            title: 'COLD CALLING',
+            dates: ['May 1, 2026 • 10:00 AM EST'],
+            price: ['$20,000'],
+            spots: ['10 spots left'],
             details: [
                 'Book 20 qualified meetings per week (proven system)',
                 'Scripts & objection handling for enterprise sales',
@@ -328,27 +326,11 @@
                 'Q&A session included'
             ]
         },
-        'foundation-june': {
-            title: 'FOUNDATION',
-            date: 'June 5, 2026 • 10:00 AM EST',
-            price: '$10,000',
-            priceNote: '',
-            spots: '15 spots left',
-            details: [
-                'Universal sales framework that works for products, services, anything',
-                'Objection handling scripts for the 5 most common objections',
-                'Cold outreach that actually works (email, DM, calls)',
-                'How to close without being pushy or salesy',
-                'Scaling with ads (basic framework)',
-                'Q&A session included'
-            ]
-        },
-        'mid-ticket-july': {
+        'mid-ticket': {
             title: 'MID-TICKET SALES',
-            date: 'July 3, 2026 • 10:00 AM EST',
-            price: '$100,000',
-            priceNote: '',
-            spots: '8 spots left',
+            dates: ['July 3, 2026 • 10:00 AM EST'],
+            price: ['$100,000'],
+            spots: ['8 spots left'],
             details: [
                 'Close $50K-$500K deals consistently',
                 'Enterprise sales frameworks for mid-market',
@@ -357,49 +339,30 @@
                 'Pipeline management systems for multiple deals',
                 'Q&A session included'
             ]
-        },
-        'annual': {
-            title: '$1M-$30M ENTERPRISE CONTRACTS',
-            date: 'Once Per Year • Next Date: TBA',
-            price: '$300,000',
-            priceNote: '',
-            spots: 'Waitlist Only',
-            details: [
-                'How to position yourself for Fortune 500 contracts',
-                'Enterprise sales cycles (6-18 months)',
-                'Proposal structure for 7-8 figure deals',
-                'Board-level negotiation tactics',
-                'Contract terms, payment structures, legal protection',
-                'Building relationships with C-suite decision-makers',
-                '90-day team support & implementation included'
-            ]
         }
     };
 
-    // Get intensive from URL parameter
+    // Get workshop from URL
     const urlParams = new URLSearchParams(window.location.search);
-    const selectedIntensive = urlParams.get('intensive');
+    const selectedWorkshop = urlParams.get('w');
 
-    // Load intensive details
-    if (selectedIntensive && intensives[selectedIntensive]) {
-        const data = intensives[selectedIntensive];
-        let html = `
-            <h2>${data.title}</h2>
-            <div class="date">${data.date}</div>
-            <div class="price">${data.price} ${data.priceNote}</div>
-            <div class="details">
-                ${data.details.map(item => `<div class="details-item">${item}</div>`).join('')}
-            </div>
-            <div class="spots">${data.spots}</div>
-        `;
-        document.getElementById('intensive-details').innerHTML = html;
-        document.getElementById('selected-intensive').value = selectedIntensive;
+    // Load workshop details
+    if (selectedWorkshop && workshops[selectedWorkshop]) {
+        const data = workshops[selectedWorkshop];
+        
+        document.getElementById('workshop-title').textContent = data.title;
+        document.getElementById('workshop-dates').innerHTML = data.dates.join('<br>');
+        document.getElementById('workshop-price').innerHTML = data.price.join(' / ');
+        document.getElementById('spots-left').innerHTML = data.spots.join(' | ');
+        document.getElementById('workshop-details').innerHTML = data.details.map(item => 
+            `<div class="details-item">${item}</div>`
+        ).join('');
+        document.getElementById('selected-workshop').value = selectedWorkshop;
     } else {
-        // Redirect back to main page if no valid intensive
         window.location.href = 'index.html';
     }
 
-    // Form submission handling
+    // Form submission
     document.getElementById('contact-form').addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -420,7 +383,7 @@
         })
         .then(function(response) {
             if (response.ok) {
-                form.innerHTML = '<div style="text-align: center; padding: 60px 20px; background: #f0f9f4; border-radius: 8px;"><h3 style="color: #059669; font-size: 2rem; margin-bottom: 16px; font-weight: 900;">✓ Application Received</h3><p style="font-size: 1.1rem; color: #1a1a1a; margin-bottom: 12px;">Thank you for applying.</p><p style="font-size: 1rem; color: #666;">We review all applications within 48 hours. If accepted, you\'ll receive payment instructions via email.</p></div>';
+                form.innerHTML = '<div style="text-align: center; padding: 60px 20px; background: #f0f9f4; border-radius: 8px;"><h3 style="color: #059669; font-size: 2.5rem; margin-bottom: 20px; font-weight: 900;">✓ Application Received</h3><p style="font-size: 1.2rem; color: #1a1a1a; margin-bottom: 15px;">Thank you for applying.</p><p style="font-size: 1.05rem; color: #666;">We review all applications within 48 hours. If accepted, you\'ll receive payment instructions via email.</p></div>';
             } else {
                 throw new Error('Form submission failed');
             }
