@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Intensive | All Women Can Sell</title>
+    <meta name="description" content="Secure your spot in the next live intensive.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #1a1a1a;
+            background: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header {
+            background: #0080FF;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        /* INTENSIVE DETAILS */
+        .section-details {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .intensive-info {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .intensive-info h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #0080FF;
+            margin-bottom: 20px;
+        }
+
+        .intensive-info .date {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .intensive-info .price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .intensive-info .details {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .intensive-info .details-item {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .intensive-info .details-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0080FF;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .intensive-info .spots {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #d9534f;
+            font-weight: 700;
+        }
+
+        /* FORM */
+        .application-form {
+            background: white;
+            padding: 50px 40px;
+            border: 2px solid #0080FF;
+            border-radius: 8px;
+        }
+
+        .application-form h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .application-form .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0080FF;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 20px;
+            background: #0080FF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-button:hover {
+            background: #006BDB;
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            opacity: 0.7;
+        }
+
+        .footer .copyright {
+            font-size: 0.9rem;
+            opacity: 0.6;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .application-form {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <section class="header">
+        <div class="container">
+            <h1>ALL WOMEN CAN SELL</h1>
+            <p class="subtitle">Secure Your Spot</p>
+        </div>
+    </section>
+
+    <!-- INTENSIVE DETAILS -->
+    <section class="section-details">
+        <div class="container">
+            <div class="intensive-info" id="intensive-details">
+                <!-- Content loaded dynamically based on URL parameter -->
+            </div>
+
+            <!-- APPLICATION FORM -->
+            <div class="application-form">
+                <h2>Complete Your Application</h2>
+                <p class="subtitle">We review all applications within 48 hours. If accepted, you'll receive payment instructions.</p>
+
+                <form id="contact-form" action="https://formspree.io/f/mojndlzg" method="POST">
+                    
+                    <input type="hidden" id="selected-intensive" name="intensive" value="">
+
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone <span style="color:#888; font-weight:400;">(optional)</span></label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="why">Why do you want this intensive? (2-3 sentences) *</label>
+                        <textarea id="why" name="why" required placeholder="Tell us about your business, what you're selling, and what you hope to achieve..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Questions? <a href="mailto:teams@allwomencansell.com">teams@allwomencansell.com</a></p>
+        <p class="copyright">© 2026 All Women Can Sell</p>
+    </footer>
+
+    <script>
+    // Intensive details database
+    const intensives = {
+        'foundation-march': {
+            title: 'FOUNDATION',
+            date: 'March 6, 2026 • 10:00 AM EST',
+            price: '$5,000',
+            priceNote: '(Introductory Price)',
+            spots: '12 spots left',
+            details: [
+                'Universal sales framework that works for products, services, anything',
+                'Objection handling scripts for the 5 most common objections',
+                'Cold outreach that actually works (email, DM, calls)',
+                'How to close without being pushy or salesy',
+                'Scaling with ads (basic framework)',
+                'Q&A session included'
+            ]
+        },
+        'ecom-april': {
+            title: 'ECOM',
+            date: 'April 3, 2026 • 10:00 AM EST',
+            price: '$10,000',
+            priceNote: '',
+            spots: '15 spots left',
+            details: [
+                'Product selection framework (what sells, what doesn\'t)',
+                'Store setup in 48 hours (Shopify walkthrough)',
+                'Ad strategy that converts cold traffic to buyers',
+                'Scaling from $5K/month to $50K/month',
+                'Systems & automation to run your store',
+                'Q&A session included'
+            ]
+        },
+        'cold-calling-may': {
+            title: 'COLD CALLING INTENSIVE',
+            date: 'May 1, 2026 • 10:00 AM EST',
+            price: '$20,000',
+            priceNote: '',
+            spots: '10 spots left',
+            details: [
+                'Book 20 qualified meetings per week (proven system)',
+                'Scripts & objection handling for enterprise sales',
+                'Voicemail tactics (20% callback rate)',
+                'How to handle gatekeepers and get to decision-makers',
+                'Enterprise outreach strategy (multi-touch campaigns)',
+                'Q&A session included'
+            ]
+        },
+        'foundation-june': {
+            title: 'FOUNDATION',
+            date: 'June 5, 2026 • 10:00 AM EST',
+            price: '$10,000',
+            priceNote: '',
+            spots: '15 spots left',
+            details: [
+                'Universal sales framework that works for products, services, anything',
+                'Objection handling scripts for the 5 most common objections',
+                'Cold outreach that actually works (email, DM, calls)',
+                'How to close without being pushy or salesy',
+                'Scaling with ads (basic framework)',
+                'Q&A session included'
+            ]
+        },
+        'mid-ticket-july': {
+            title: 'MID-TICKET SALES',
+            date: 'July 3, 2026 • 10:00 AM EST',
+            price: '$100,000',
+            priceNote: '',
+            spots: '8 spots left',
+            details: [
+                'Close $50K-$500K deals consistently',
+                'Enterprise sales frameworks for mid-market',
+                'Proposal structure for 6-figure deals',
+                'Director/VP-level negotiation tactics',
+                'Pipeline management systems for multiple deals',
+                'Q&A session included'
+            ]
+        },
+        'annual': {
+            title: '$1M-$30M ENTERPRISE CONTRACTS',
+            date: 'Once Per Year • Next Date: TBA',
+            price: '$300,000',
+            priceNote: '',
+            spots: 'Waitlist Only',
+            details: [
+                'How to position yourself for Fortune 500 contracts',
+                'Enterprise sales cycles (6-18 months)',
+                'Proposal structure for 7-8 figure deals',
+                'Board-level negotiation tactics',
+                'Contract terms, payment structures, legal protection',
+                'Building relationships with C-suite decision-makers',
+                '90-day team support & implementation included'
+            ]
+        }
+    };
+
+    // Get intensive from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedIntensive = urlParams.get('intensive');
+
+    // Load intensive details
+    if (selectedIntensive && intensives[selectedIntensive]) {
+        const data = intensives[selectedIntensive];
+        let html = `
+            <h2>${data.title}</h2>
+            <div class="date">${data.date}</div>
+            <div class="price">${data.price} ${data.priceNote}</div>
+            <div class="details">
+                ${data.details.map(item => `<div class="details-item">${item}</div>`).join('')}
+            </div>
+            <div class="spots">${data.spots}</div>
+        `;
+        document.getElementById('intensive-details').innerHTML = html;
+        document.getElementById('selected-intensive').value = selectedIntensive;
+    } else {
+        // Redirect back to main page if no valid intensive
+        window.location.href = 'index.html';
+    }
+
+    // Form submission handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        var form = this;
+        var formData = new FormData(form);
+        var submitButton = form.querySelector('button[type="submit"]');
+        var originalButtonText = submitButton.textContent;
+        
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(function(response) {
+            if (response.ok) {
+                form.innerHTML = '<div style="text-align: center; padding: 60px 20px; background: #f0f9f4; border-radius: 8px;"><h3 style="color: #059669; font-size: 2rem; margin-bottom: 16px; font-weight: 900;">✓ Application Received</h3><p style="font-size: 1.1rem; color: #1a1a1a; margin-bottom: 12px;">Thank you for applying.</p><p style="font-size: 1rem; color: #666;">We review all applications within 48 hours. If accepted, you\'ll receive payment instructions via email.</p></div>';
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(function(error) {
+            alert('There was a problem submitting your application. Please email us directly at teams@allwomencansell.com');
+            submitButton.textContent = originalButtonText;
+            submitButton.disabled = false;
+        });
+    });
+    </script>
+
+</body>
+</html>
