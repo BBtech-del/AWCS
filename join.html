@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -32,44 +32,61 @@
         }
 
         .header h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 30px;
-        }
-
-        .header .dates {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-
-        .header .price {
             font-size: 4rem;
             font-weight: 900;
         }
 
-        .section-details {
+        .section-sessions {
             padding: 80px 20px;
         }
 
-        .details-box {
-            background: #f8f9fa;
-            padding: 50px;
-            border-radius: 8px;
-            margin-bottom: 60px;
+        .sessions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
         }
 
-        .details-box h2 {
-            font-size: 2rem;
+        .session-box {
+            border: 3px solid #0033A0;
+            padding: 50px 40px;
+            border-radius: 8px;
+        }
+
+        .session-box .date {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0033A0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .session-box .price {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .session-box .spots {
+            font-size: 1rem;
+            color: #d9534f;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .session-box h3 {
+            font-size: 1.5rem;
             font-weight: 900;
             color: #0033A0;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .detail-item {
-            font-size: 1.1rem;
-            margin-bottom: 16px;
-            padding-left: 30px;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            padding-left: 25px;
             position: relative;
         }
 
@@ -78,55 +95,33 @@
             position: absolute;
             left: 0;
             color: #0033A0;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
-        .spots {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #d9534f;
-            font-weight: 700;
-            margin-bottom: 60px;
-        }
-
-        .form-box {
-            border: 3px solid #0033A0;
-            padding: 60px 50px;
-            border-radius: 8px;
-        }
-
-        .form-box h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .form-box .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 1.05rem;
+        .form-divider {
+            height: 2px;
+            background: #e0e0e0;
+            margin: 40px 0;
         }
 
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 16px;
+            padding: 14px;
             border: 2px solid #ddd;
             border-radius: 6px;
-            font-size: 1.05rem;
+            font-size: 1rem;
             font-family: inherit;
         }
 
@@ -137,18 +132,18 @@
         }
 
         .form-group textarea {
-            min-height: 120px;
+            min-height: 100px;
             resize: vertical;
         }
 
         .submit-button {
             width: 100%;
-            padding: 20px;
+            padding: 18px;
             background: #0033A0;
             color: white;
             border: none;
             border-radius: 6px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
             text-transform: uppercase;
@@ -172,21 +167,23 @@
             text-decoration: none;
         }
 
+        @media (max-width: 1100px) {
+            .sessions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2.5rem;
             }
 
-            .header .price {
-                font-size: 3rem;
-            }
-
-            .form-box {
-                padding: 40px 25px;
-            }
-
-            .details-box {
+            .session-box {
                 padding: 35px 25px;
+            }
+
+            .session-box .price {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -196,53 +193,12 @@
     <div class="header">
         <div class="container">
             <h1 id="title"></h1>
-            <div class="dates" id="dates"></div>
-            <div class="price" id="price"></div>
         </div>
     </div>
 
-    <div class="section-details">
+    <div class="section-sessions">
         <div class="container">
-            
-            <div class="details-box">
-                <h2>What's Covered</h2>
-                <div id="details"></div>
-            </div>
-
-            <div class="spots" id="spots"></div>
-
-            <div class="form-box">
-                <h2>Secure Your Spot</h2>
-                <p class="subtitle">We review all applications within 48 hours. If accepted, you'll receive payment instructions.</p>
-
-                <form id="contact-form" action="https://formspree.io/f/mojndlzg" method="POST">
-                    
-                    <input type="hidden" id="workshop-name" name="workshop" value="">
-
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone <span style="color:#888;font-weight:400;">(optional)</span></label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="why">Why do you want this? (2-3 sentences) *</label>
-                        <textarea id="why" name="why" required placeholder="Tell us about your business, what you're selling, and what you hope to achieve..."></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-button">Submit Application</button>
-
-                </form>
-            </div>
+            <div class="sessions-grid" id="sessions-grid"></div>
         </div>
     </div>
 
@@ -255,58 +211,92 @@
     const data = {
         'foundation': {
             title: 'FOUNDATION',
-            dates: ['March 6, 2026 • 10:00 AM EST', 'June 5, 2026 • 10:00 AM EST'],
-            price: ['$5,000 (Intro)', '$10,000'],
-            spots: ['12 spots left', '15 spots left'],
-            details: [
-                'Universal sales framework',
-                'Objection handling scripts',
-                'Cold outreach that works',
-                'Closing without being pushy',
-                'How to scale with ads',
-                'Q&A included'
+            sessions: [
+                {
+                    date: 'March 6, 2026 • 10:00 AM EST',
+                    price: '$5,000',
+                    priceNote: '(Introductory Price)',
+                    spots: '12 spots left',
+                    details: [
+                        'Universal sales framework',
+                        'Objection handling scripts',
+                        'Cold outreach that works',
+                        'Closing without being pushy',
+                        'How to scale with ads',
+                        'Q&A included'
+                    ]
+                },
+                {
+                    date: 'June 5, 2026 • 10:00 AM EST',
+                    price: '$10,000',
+                    priceNote: '',
+                    spots: '15 spots left',
+                    details: [
+                        'Universal sales framework',
+                        'Objection handling scripts',
+                        'Cold outreach that works',
+                        'Closing without being pushy',
+                        'How to scale with ads',
+                        'Q&A included'
+                    ]
+                }
             ]
         },
         'ecom': {
             title: 'ECOM',
-            dates: ['April 3, 2026 • 10:00 AM EST'],
-            price: ['$10,000'],
-            spots: ['15 spots left'],
-            details: [
-                'Product selection framework',
-                'Store setup in 48 hours',
-                'Ad strategy that converts',
-                'Scaling $5K to $50K/month',
-                'Systems & automation',
-                'Q&A included'
+            sessions: [
+                {
+                    date: 'April 3, 2026 • 10:00 AM EST',
+                    price: '$10,000',
+                    priceNote: '',
+                    spots: '15 spots left',
+                    details: [
+                        'Product selection framework',
+                        'Store setup in 48 hours',
+                        'Ad strategy that converts',
+                        'Scaling $5K to $50K/month',
+                        'Systems & automation',
+                        'Q&A included'
+                    ]
+                }
             ]
         },
         'cold-calling': {
             title: 'COLD CALLING',
-            dates: ['May 1, 2026 • 10:00 AM EST'],
-            price: ['$20,000'],
-            spots: ['10 spots left'],
-            details: [
-                'Book 20 meetings per week',
-                'Scripts & objection handling',
-                'Voicemail tactics (20% callback)',
-                'Handle gatekeepers',
-                'Enterprise outreach strategy',
-                'Q&A included'
+            sessions: [
+                {
+                    date: 'May 1, 2026 • 10:00 AM EST',
+                    price: '$20,000',
+                    priceNote: '',
+                    spots: '10 spots left',
+                    details: [
+                        'Book 20 meetings per week',
+                        'Scripts & objection handling',
+                        'Voicemail tactics (20% callback)',
+                        'Handle gatekeepers',
+                        'Enterprise outreach strategy',
+                        'Q&A included'
+                    ]
+                }
             ]
         },
         'mid-ticket': {
             title: 'MID-TICKET SALES',
-            dates: ['July 3, 2026 • 10:00 AM EST'],
-            price: ['$100,000'],
-            spots: ['8 spots left'],
-            details: [
-                'Close $50K-$500K deals',
-                'Enterprise sales frameworks',
-                'Proposal structure for 6-figure deals',
-                'Director/VP-level negotiation',
-                'Pipeline management systems',
-                'Q&A included'
+            sessions: [
+                {
+                    date: 'July 3, 2026 • 10:00 AM EST',
+                    price: '$100,000',
+                    priceNote: '',
+                    spots: '8 spots left',
+                    details: [
+                        'Close $50K-$500K deals',
+                        'Enterprise sales frameworks',
+                        'Proposal structure for 6-figure deals',
+                        'Director/VP-level negotiation',
+                        'Pipeline management systems',
+                        'Q&A included'
+                    ]
+                }
             ]
         }
     };
@@ -317,45 +307,86 @@
     if (w && data[w]) {
         const workshop = data[w];
         document.getElementById('title').textContent = workshop.title;
-        document.getElementById('dates').innerHTML = workshop.dates.join('<br>');
-        document.getElementById('price').innerHTML = workshop.price.join(' / ');
-        document.getElementById('spots').innerHTML = workshop.spots.join(' | ');
-        document.getElementById('details').innerHTML = workshop.details.map(d => 
-            `<div class="detail-item">${d}</div>`
-        ).join('');
-        document.getElementById('workshop-name').value = w;
+
+        const grid = document.getElementById('sessions-grid');
+        
+        workshop.sessions.forEach((session, index) => {
+            const box = document.createElement('div');
+            box.className = 'session-box';
+            box.innerHTML = `
+                <div class="date">${session.date}</div>
+                <div class="price">${session.price} ${session.priceNote}</div>
+                <div class="spots">${session.spots}</div>
+                
+                <h3>What's Covered</h3>
+                ${session.details.map(d => `<div class="detail-item">${d}</div>`).join('')}
+                
+                <div class="form-divider"></div>
+                
+                <form class="session-form" data-session="${index}">
+                    <input type="hidden" name="workshop" value="${w}">
+                    <input type="hidden" name="session-date" value="${session.date}">
+                    
+                    <div class="form-group">
+                        <label>Name *</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Phone <span style="color:#888;font-weight:400;">(optional)</span></label>
+                        <input type="tel" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Why do you want this? (2-3 sentences) *</label>
+                        <textarea name="why" required placeholder="Tell us about your business, what you're selling, and what you hope to achieve..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            `;
+            grid.appendChild(box);
+        });
+
+        // Handle form submissions
+        document.querySelectorAll('.session-form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const submitButton = this.querySelector('button[type="submit"]');
+                
+                submitButton.textContent = 'Sending...';
+                submitButton.disabled = true;
+                
+                fetch('https://formspree.io/f/mojndlzg', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {'Accept': 'application/json'}
+                })
+                .then(function(response) {
+                    if (response.ok) {
+                        form.innerHTML = '<div style="text-align:center;padding:40px 20px;background:#f0f9f4;border-radius:8px;"><h3 style="color:#059669;font-size:2rem;margin-bottom:15px;font-weight:900;">✓ Application Received</h3><p style="font-size:1.1rem;color:#1a1a1a;margin-bottom:12px;">Thank you.</p><p style="font-size:1rem;color:#666;">We review all applications within 48 hours. If accepted, you\'ll receive payment instructions via email.</p></div>';
+                    } else {
+                        throw new Error('Failed');
+                    }
+                })
+                .catch(function(error) {
+                    alert('Problem submitting. Please email teams@allwomencansell.com');
+                    submitButton.textContent = 'Submit Application';
+                    submitButton.disabled = false;
+                });
+            });
+        });
+
     } else {
         window.location.href = 'index.html';
     }
-
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        var form = this;
-        var formData = new FormData(form);
-        var submitButton = form.querySelector('button[type="submit"]');
-        
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-        
-        fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {'Accept': 'application/json'}
-        })
-        .then(function(response) {
-            if (response.ok) {
-                form.innerHTML = '<div style="text-align:center;padding:60px 20px;background:#f0f9f4;border-radius:8px;"><h3 style="color:#059669;font-size:2.5rem;margin-bottom:20px;font-weight:900;">✓ Application Received</h3><p style="font-size:1.2rem;color:#1a1a1a;margin-bottom:15px;">Thank you.</p><p style="font-size:1.05rem;color:#666;">We review all applications within 48 hours. If accepted, you\'ll receive payment instructions via email.</p></div>';
-            } else {
-                throw new Error('Failed');
-            }
-        })
-        .catch(function(error) {
-            alert('Problem submitting. Please email teams@allwomencansell.com');
-            submitButton.textContent = 'Submit Application';
-            submitButton.disabled = false;
-        });
-    });
     </script>
 
 </body>
